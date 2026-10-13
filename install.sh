@@ -11,10 +11,10 @@ sudo apt install build-essential curl wget git
 sudo apt install zsh
 ln -sf "$BASE_PATH/.zshrc" ~/.zshrc
 chsh -s $(which zsh)
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-brew install fzf
-brew install --cask font-meslo-lg-nerd-font
-brew install powerlevel10k
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended 
+/home/linuxbrew/.linuxbrew/bin/brew install fzf
+/home/linuxbrew/.linuxbrew/bin/brew install --cask font-meslo-lg-nerd-font
+/home/linuxbrew/.linuxbrew/bin/brew install powerlevel10k
 ln -sf "$BASE_PATH/.config/.p10k.zsh" ~/.p10k.zsh
 
 # Kitty Setup
