@@ -125,6 +125,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+unsetopt correct_all
+unsetopt correct
+
 # Load Homebrew
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
 
