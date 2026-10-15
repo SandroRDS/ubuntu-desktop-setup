@@ -9,9 +9,9 @@ sudo apt install build-essential curl wget git
 
 # ZSH + Oh My ZSH Setup
 sudo apt install zsh
-ln -sf "$BASE_PATH/.zshrc" ~/.zshrc
 chsh -s $(which zsh)
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended 
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+ln -sf "$BASE_PATH/.zshrc" ~/.zshrc
 /home/linuxbrew/.linuxbrew/bin/brew install fzf
 /home/linuxbrew/.linuxbrew/bin/brew install --cask font-meslo-lg-nerd-font
 /home/linuxbrew/.linuxbrew/bin/brew install powerlevel10k
